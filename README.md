@@ -1,4 +1,4 @@
-# React-Node-Mongo Book Store App
+# Book Store App
 
 Welcome to my Book Store App! This application is built using the (MRN) stack, consisting of MongoDB, React, and Node.js. 
 It allows users to browse, search, and purchase books from the bookstore.
