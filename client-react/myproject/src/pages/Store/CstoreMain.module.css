@@ -1,0 +1,47 @@
+.containerc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 10px;
+}
+.bodyc {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.image-wrapperc {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.button-wrapperc {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.buttonc {
+  display: inline-block;
+  padding: 30px 40px;
+  background-color: black;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 10px; 
+}
+
+.buttonc:hover {
+  background-color: #00ff00;
+  color: black;
+}

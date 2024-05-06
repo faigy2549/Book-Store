@@ -1,0 +1,38 @@
+const  mongoose  = require('mongoose')
+const bookSchema=new mongoose.Schema({
+    name:{
+        type:mongoose.Schema.Types.String,
+        required:true,
+    },
+    code:{
+      type:String,
+       required:true,
+       unique:true
+    },
+    author:{
+        type:mongoose.Schema.Types.String,
+    },
+    price:{
+        type:Number,
+        required:true
+    },
+    language:{
+        type:mongoose.Schema.Types.String
+    },
+    image:{
+     type:String
+    },
+    type:{
+        type:String,
+        enum:["kids","kodesh","teens","comic"],
+        default:"teens"
+        },
+    popular:{
+    type:Boolean,
+     default:false
+    }
+    }, 
+    {
+     timestamps:true
+})
+module.exports=mongoose.model('Book',bookSchema)

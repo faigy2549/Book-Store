@@ -1,0 +1,10 @@
+const userController=require ("../controllers/userController")
+const express = require("express")
+const router = express.Router()
+const User =require("../models/User")
+router.post("/",userController.CreateUser)
+router.get("/",userController.getUsers)
+router.put("/",userController.updateUser)
+router.delete("/",userController. deleteuser)
+router.get("/:id",userController. getbyid)
+module.exports=router
